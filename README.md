@@ -43,6 +43,6 @@ StructureDiscovery/
 │   └── main.py                   # Main file that needs all the above
 │
 ├── LICENSE                       # MIT open-source license
-│
+├── requirements.txt              # Python dependencies
 └── README.md                     # Project overview and instructions
 ```
