@@ -9,7 +9,7 @@ Authors: Nikos Tsikouras, Christos Tzamos, Ioannis Mitliagkas, Yorgos Pantis
 If you use this work, please cite:
 
 ```bibtex
-@inproceedings{tsikourasderantomization2025, 
+@inproceedings{tsikourasderandomization2025, 
   title={A Derandomization Framework for Structure Discovery: Applications in Neural Networks and Beyond}, 
   author={Tsikouras, Nikos and Tzamos, Christos and Mitliagkas, Ioannis and Pantis, Yorgos},
   booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems}, 
@@ -23,13 +23,27 @@ If you use this work, please cite:
 
 StructureDiscovery/
 │
-├── NNs/                              
+├── NNs/
+│   ├── activations.py            # Activation functions 
+│   ├── model.py                  # Neural network model architecture
+│   ├── train.py                  # Training pipeline and routines
+│   ├── plot.py                   # Training curve and evaluation visualizations
+│   └── main.py                   # Main file that needs all the above
 │
-├── MAXCUT/                                 
+├── JL/
+│   ├── model.py                  # Model architecture
+│   ├── train.py                  # Optimization loop for training the distortion model
+│   ├── plot.py                   # Plots of distortion and variance evolution
+│   └── main.py                   # Main file that needs all the above
 │
-├── JL/                   
+├── MAXCUT/
+│   ├── utilities.py              # Helper functions: exact MAXCUT, e.g. graph generation
+│   ├── optimizer.py              # Optimization routine for MAXCUT using gradients
+│   ├── plot.py                   # Plot sigma and cut values over iterations
+│   └── main.py                   # Main file that needs all the above
 │
-├── README.md                                   # Project documentation
-├── requirements.txt                            # Python dependencies
-└── LICENSE                                     # MIT license
+├── LICENSE                       # MIT open-source license
+│
+└── README.md                     # Project overview and instructions
+
 ```
