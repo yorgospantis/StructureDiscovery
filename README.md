@@ -46,11 +46,4 @@ StructureDiscovery/
 ├── LICENSE                       # MIT open-source license
 │
 └── README.md                     # Project overview and instructions
-
 ```
-=======
-├── README.md                                   # Project documentation
-├── requirements.txt                            # Python dependencies
-└── LICENSE                                     # MIT license
-```
->>>>>>> a6648d5dffb667879152e83cc6ad4d1e7ed881be
