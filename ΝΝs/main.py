@@ -1,6 +1,6 @@
 from train import train
 from activations import relui, tanh
-from plot_weights import plot_weight_trajectory
+from StructureDiscovery.NNs.plot import plot_weight_trajectory
 
 if __name__ == "__main__":
     result = train(n=50, d=2, steps=10_000, h=1000,

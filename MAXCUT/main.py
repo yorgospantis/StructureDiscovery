@@ -1,8 +1,8 @@
 import torch
 import numpy as np
-from maxcut_utils import generate_adjacency_matrix, max_cut
-from maxcut_optimizer import optimize_max_cut
-from maxcut_plotting import plot_sigma_evolution, plot_cut_values
+from StructureDiscovery.MAXCUT.utilities import generate_adjacency_matrix, max_cut
+from StructureDiscovery.MAXCUT.optimizer import optimize_max_cut
+from StructureDiscovery.MAXCUT.plot import plot_sigma_evolution, plot_cut_values
 
 # Seeds
 torch.manual_seed(42)
