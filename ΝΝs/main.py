@@ -1,5 +1,5 @@
-from train import train
-from activations import relui, tanh
+from StructureDiscovery.NNs.train import train
+from StructureDiscovery.NNs.activations import relui, tanh
 from StructureDiscovery.NNs.plot import plot_weight_trajectory
 
 if __name__ == "__main__":
