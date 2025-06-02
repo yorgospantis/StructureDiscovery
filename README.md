@@ -27,7 +27,7 @@ If you use this work, please cite:
 
 StructureDiscovery/
 │
-├── NNs/
+├── NeuralNetorks/
 │   ├── activations.py            # Activation functions 
 │   ├── model.py                  # Neural network model architecture
 │   ├── train.py                  # Training pipeline and routines
