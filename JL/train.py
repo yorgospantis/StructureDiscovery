@@ -1,7 +1,7 @@
 import torch
 import numpy as np
 import torch.optim as optim
-from distortion_model import DistortionOptimizer
+from StructureDiscovery.JL.model import DistortionOptimizer
 
 def generate_data(n, d):
     return torch.nn.functional.normalize(torch.rand((n, d)), dim=-1)
