@@ -1,8 +1,8 @@
 import torch
 import numpy as np
 from tqdm import tqdm
-from StructureDiscovery.NNs.model import unit_Gaussian, loss_fn, single_index, multiple_index
-from StructureDiscovery.NNs.activations import relui
+from StructureDiscovery.NeuralNetworks.model import unit_Gaussian, loss_fn, single_index, multiple_index
+from StructureDiscovery.NeuralNetworks.activations import relui
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
