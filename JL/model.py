@@ -25,4 +25,5 @@ class DistortionOptimizer(nn.Module):
         return torch.max(torch.abs(distortions))
 
     def gradient(self, A, X):
-        return self.comput
+        return self.compute_distortion(A, X)
+
