@@ -3,7 +3,7 @@
 
 **Nikos Tsikouras<sup>1,2</sup>, Christos Tzamos<sup>1,2</sup>, Ioannis Mitliagkas<sup>2,3,4,5,6</sup>, Yorgos Pantis<sup>1,2</sup>**
 
-<sup>1</sup>Department of Informatics and Telecommunications, National and Kapodistrian University of Athens, Athens Greece<br>
+<sup>1</sup>Department of Informatics and Telecommunications, National and Kapodistrian University of Athens, Athens, Greece<br>
 <sup>2</sup>Archimedes, Athena Research Center, Athens, Greece<br>
 <sup>3</sup>Université de Montréal<br>
 <sup>4</sup>Mila - Quebec AI Institute<br>
