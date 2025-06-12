@@ -9,6 +9,7 @@
 <sup>4</sup>Mila - Quebec AI Institute<br>
 <sup>5</sup>Canada CIFAR AI chair<br>
 <sup>6</sup>Google DeepΜind<br>
+
 *Authors listed in contrubution order*
 
 [![Paper](https://img.shields.io/badge/NeurIPS-2025-red?logo=book&logoColor=white)](https://papers.nips.cc/paper_files/paper/2025/hash/yourpaperid-Abstract.html)
