@@ -63,3 +63,7 @@ StructureDiscovery/
 ├── requirements.txt              # Python dependencies
 └── README.md                     # Project overview and instructions
 ```
+
+## Acknowledgments
+This work has been partially supported by project MIS 5154714 of the National Recovery and Resilience Plan Greece 2.0 funded by the European Union under the NextGenerationEU Program.
+
