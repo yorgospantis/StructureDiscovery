@@ -48,7 +48,7 @@ StructureDiscovery/
 │   ├── plot.py                   # Training curve and evaluation visualizations
 │   └── main.py                   # Main file that needs all the above
 │
-├── JL/
+├── JohnsonLindenstrauss/
 │   ├── model.py                  # Model architecture
 │   ├── train.py                  # Optimization loop for training the distortion model
 │   ├── plot.py                   # Plots of distortion and variance evolution
