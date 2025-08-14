@@ -1,5 +1,5 @@
-from StructureDiscovery.JL.train import generate_data, train_model, evaluate_initial_distortion
-from StructureDiscovery.JL.plot import plot_distortion, plot_variance
+from StructureDiscovery.JohnsonLindenstrauss.train import generate_data, train_model, evaluate_initial_distortion
+from StructureDiscovery.JohnsonLindenstrauss.plot import plot_distortion, plot_variance
 
 # Define constants
 n = 100
