@@ -26,11 +26,11 @@ Understanding neural networks (NNs) theoretically remains a significant challeng
 If you use this work, please cite:
 
 ```bibtex
-@inproceedings{tsikourasderandomization2025, 
+@inproceedings{derandomization2026, 
   title={A Derandomization Framework for Structure Discovery: Applications in Neural Networks and Beyond}, 
   author={Tsikouras, Nikos and Tzamos, Christos and Mitliagkas, Ioannis and Pantis, Yorgos},
-  booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems}, 
-  year={2025}
+  booktitle={The Four-teenth International Conference on Learning Representations}, 
+  year={2026}
 }
 ```
 
