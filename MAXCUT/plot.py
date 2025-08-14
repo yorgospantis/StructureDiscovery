@@ -7,7 +7,7 @@ def plot_sigma_evolution(max_sigmas):
     plt.ylabel(r"$\sigma$")
     plt.title(r"Maximum $\sigma$ Over Iterations", fontsize=15, pad=20)
     plt.legend(loc='upper right')
-    plt.savefig("maxcut_sigma.eps", format='eps')
+    plt.savefig("maxcut_sigma.png", format='png')
     plt.show()
 
 def plot_cut_values(cut_values, max_cut_value):
@@ -18,5 +18,5 @@ def plot_cut_values(cut_values, max_cut_value):
     plt.ylabel("Cut Value")
     plt.title("Cut Value Over Iterations", fontsize=15, pad=20)
     plt.legend(loc='upper right', bbox_to_anchor=(1, 0.9))
-    plt.savefig("maxcut_cut.eps", format='eps')
+    plt.savefig("maxcut_cut.png", format='png')
     plt.show()
