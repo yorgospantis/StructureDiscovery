@@ -12,8 +12,9 @@
 
 *Authors listed in contrubution order*
 
-[![Paper](https://img.shields.io/badge/NeurIPS-2025-red?logo=book&logoColor=white)](https://papers.nips.cc/paper_files/paper/2025/hash/yourpaperid-Abstract.html)
-[![License](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
+[![Paper](https://img.shields.io/badge/ICLR-2026-blue?logo=book&logoColor=white)](https://openreview.net/forum?id=yourpaperid)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 
 </div>
 
