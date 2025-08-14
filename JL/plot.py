@@ -22,7 +22,7 @@ def plot_distortion(dists, mean_initial_distortion, min_initial_distortion):
     plt.axhline(min_initial_distortion, color='red', linestyle='--', linewidth=1,
                 label="Minimum Distortion of N(0, 1)")
     plt.legend(loc='upper right')
-    plt.savefig("JL_distortion.eps", format='eps')
+    plt.savefig("JL_distortion.png", format='png')
     plt.show()
 
 def plot_variance(s2s):
@@ -32,5 +32,5 @@ def plot_variance(s2s):
     plt.ylabel(r"Variance $\sigma^2$")
     plt.title(r"Variance $\sigma^2$ Over Iterations", fontsize=15, pad=20)
     plt.legend(loc='upper right')
-    plt.savefig("JL_variance.eps", format='eps')
+    plt.savefig("JL_variance.png", format='png')
     plt.show()
