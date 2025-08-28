@@ -1,14 +1,10 @@
 <div align="center">
 <h1>A Derandomization Framework for Structure Discovery: Applications in Neural Networks and Beyond</h1>
 
-**Nikos Tsikouras<sup>1,2</sup>, Christos Tzamos<sup>1,2</sup>, Ioannis Mitliagkas<sup>2,3,4,5,6</sup>, Yorgos Pantis<sup>1,2</sup>**
+**Nikos Tsikouras<sup>1,2</sup>, Christos Tzamos<sup>1,2</sup>, Ioannis Mitliagkas<sup>2</sup>, Yorgos Pantis<sup>1,2</sup>**
 
 <sup>1</sup>Department of Informatics and Telecommunications, National and Kapodistrian University of Athens, Greece<br>
 <sup>2</sup>Archimedes, Athena Research Center, Greece<br>
-<sup>3</sup>Université de Montréal<br>
-<sup>4</sup>Mila - Quebec AI Institute<br>
-<sup>5</sup>Canada CIFAR AI chair<br>
-<sup>6</sup>Google DeepΜind<br>
 
 *Authors listed in contrubution order*
 
