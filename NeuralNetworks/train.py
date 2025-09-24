@@ -6,24 +6,21 @@ from StructureDiscovery.NeuralNetworks.activations import relui
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-def train(n, d, h, theta=None, nonlin=None, act=None, teacher_model=single_index,
-          lr=0.01, lr_b=1e-3, steps=100_000, lda=1e-7, sigma=0, points=5000,
-          train_fin=False, random_seed=0, decay_stepsize=False):
+def train(n, d, h, theta=None, nonlin=tanh, act=relui, teacher_model=single_index,
+                     lr=0.01, lr_b=1e-3, steps=10_000, lda=1e-5, sigma=0,
+                     points=5_000, train_fin=False, random_seed=0,
+                     epsilon=1e-6, perturb_radius=0.005):
 
     torch.manual_seed(random_seed)
-    step_list = np.exp(np.linspace(0, np.log(steps), points)).astype(int)
+
+    step_list = np.exp(np.arange(0, np.log(steps), np.log(steps)/points)).astype(int)
     step_list = np.unique(step_list) - 1
-
     result = np.zeros([len(step_list), h, d])
-    W0 = torch.randn(d, h, device=device) * (1 / d) ** 0.5
-    a = torch.randn(h, 1, device=device) * (1 / h)
-    b = torch.randn(1, h, device=device) * (1 / h)
 
-    eta1 = (lr * h ** 0.5)
-    etab = (lr_b ** 2 * h ** 0.5) ** 2
-
-    W = W0.clone(); W.requires_grad = True
-    b.requires_grad = True
+    # Initialize weights
+    W = torch.normal(0, (1/d)**0.5, size=(d, h), device=device, requires_grad=True)
+    a = torch.normal(0, (1/h)**1, size=(h, 1), device=device)
+    b = torch.normal(0, (1/h), size=(1, h), device=device, requires_grad=True)
     if train_fin:
         a.requires_grad = True
 
@@ -32,33 +29,50 @@ def train(n, d, h, theta=None, nonlin=None, act=None, teacher_model=single_index
 
     count = 0
     for i in tqdm(range(steps)):
-        eta_i = eta1 / (i + 1) if decay_stepsize else eta1
-
+        # Generate training data
         if teacher_model == multiple_index:
             X, Y = teacher_model(n, d, theta, sigma, nonlin)
         else:
             X, Y = teacher_model(n, d, sigma, nonlin)
 
-        loss = loss_fn(Y, forward(X))
-        loss.backward()
+        # Compute loss
+        loss_train = loss_fn(Y, forward(X))
+        loss_train.backward()
 
         with torch.no_grad():
-            W -= eta_i * (W.grad + lda * W)
-            b -= etab * b.grad
+            # Compute gradient norm for conditional perturbation
+            grad_norm = torch.norm(W.grad)
+
+            # Standard gradient descent + weight decay
+            W -= lr * (W.grad + lda * W)
+            b -= lr_b * b.grad
             if train_fin:
-                a -= eta_i * (a.grad + lda * a)
+                a -= lr * (a.grad + lda * a)
 
-        W.grad.zero_(); b.grad.zero_()
-        if train_fin: a.grad.zero_()
+            # Conditional perturbation if gradient is small
+            if grad_norm < epsilon:
+                # Perturb W and b uniformly within a ball
+                W += perturb_radius * torch.randn_like(W)
+                b += perturb_radius * torch.randn_like(b)
+                if train_fin:
+                    a += perturb_radius * torch.randn_like(a)
 
+        # Reset gradients
+        W.grad.zero_()
+        b.grad.zero_()
+        if train_fin:
+            a.grad.zero_()
+
+        # Store weights at step_list
         if count < len(step_list) and i == step_list[count]:
             for j in range(d):
                 result[count, :, j] = W[j, :].detach().cpu().numpy()
             count += 1
 
         if i % 1000 == 0:
-            print(f"Training loss: {loss.item()}")
+            print(f'Training loss: {loss_train.item()} | grad_norm: {grad_norm.item()}')
 
+    # Evaluate on test set
     test_n = 10000
     if teacher_model == multiple_index:
         theta = torch.Tensor(ortho_group.rvs(dim=d)[:, :1]).to(device)
@@ -68,6 +82,6 @@ def train(n, d, h, theta=None, nonlin=None, act=None, teacher_model=single_index
 
     test_Y_pred = forward(test_X)
     loss_test = loss_fn(test_Y, test_Y_pred)
-    print(f"Test loss: {loss_test.item()}")
+    print(f'Test loss: {loss_test.item()}')
 
     return result
