@@ -1,14 +1,10 @@
 <div align="center">
 <h1>A Derandomization Framework for Structure Discovery: Applications in Neural Networks and Beyond</h1>
 
-**Nikos Tsikouras<sup>1,2</sup>, Christos Tzamos<sup>1,2</sup>, Ioannis Mitliagkas<sup>2,3,4,5,6</sup>, Yorgos Pantis<sup>1,2</sup>**
+**Nikos Tsikouras<sup>1,2</sup>, Christos Tzamos<sup>1,2</sup>, Ioannis Mitliagkas<sup>2</sup>, Yorgos Pantis<sup>1,2</sup>**
 
 <sup>1</sup>Department of Informatics and Telecommunications, National and Kapodistrian University of Athens, Greece<br>
 <sup>2</sup>Archimedes, Athena Research Center, Greece<br>
-<sup>3</sup>Université de Montréal<br>
-<sup>4</sup>Mila - Quebec AI Institute<br>
-<sup>5</sup>Canada CIFAR AI chair<br>
-<sup>6</sup>Google DeepΜind<br>
 
 *Authors listed in contrubution order*
 
@@ -19,7 +15,7 @@
 </div>
 
 ## Abstract
-Understanding neural networks (NNs) theoretically remains a significant challenge. The work of [MHPG+22](https://iclr.cc/virtual/2023/poster/11421) shows that under some conditions, a two-layer NN can discover low-rank structure, which can be used to understand its generalization behavior. In this paper, we zoom in on this problem and extend their findings to a more general setting. We allow (a) NNs of arbitrary size and depth, (b) with all parameters trainable, (c) under any loss function, and (d) tiny regularization. At the core of our approach is a key *derandomization* Lemma, which states that optimizing the function **E**<sub>**x**</sub> [**g**<sub>θ</sub>(**W** **x** + **b**)] converges to a point where **W = 0**, under mild conditions. The fundamental nature of this Lemma directly explains structure discovery and has immediate applications in other domains including an end-to-end approximation for MAXCUT, and computing Johnson-Lindenstrauss embeddings.
+Understanding neural networks (NNs) theoretically remains a significant challenge. The work of ([Mousavi-Hosseini et al., 2022](https://iclr.cc/virtual/2023/poster/11421)) shows that under some conditions, a two-layer NN can discover low-rank structure, which can be used to understand its generalization behavior. In this paper, we zoom in on this problem and extend their findings to a more general setting. We allow (a) NNs of arbitrary size and depth, (b) with all parameters trainable, (c) under any loss function, and (d) tiny regularization. At the core of our approach is a key *derandomization* Lemma, which states that optimizing the function **E**<sub>**x**</sub> [**g**<sub>θ</sub>(**W** **x** + **b**)] converges to a point where **W = 0**, under mild conditions. The fundamental nature of this Lemma directly explains structure discovery and has immediate applications in other domains including an end-to-end approximation for MAXCUT, and computing Johnson-Lindenstrauss embeddings.
 
 
 ## Citation
