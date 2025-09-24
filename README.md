@@ -6,8 +6,6 @@
 <sup>1</sup>Department of Informatics and Telecommunications, National and Kapodistrian University of Athens, Greece<br>
 <sup>2</sup>Archimedes, Athena Research Center, Greece<br>
 
-*Authors listed in contrubution order*
-
 [![Paper](https://img.shields.io/badge/ICLR-2026-blue?logo=book&logoColor=white)](https://openreview.net/forum?id=yourpaperid)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
