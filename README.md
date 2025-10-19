@@ -5,10 +5,7 @@
 
 <sup>1</sup>National and Kapodistrian University of Athens, Greece<br>
 <sup>2</sup>Archimedes, Athena Research Center, Greece<br>
-<<<<<<< HEAD
-=======
 <sup>3</sup>Mila & Université de Montréal, Canada<br>
->>>>>>> 3f8f5bb (final updates)
 
 [![Paper](https://img.shields.io/badge/ICLR-2026-blue?logo=book&logoColor=white)](https://openreview.net/forum?id=yourpaperid)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
