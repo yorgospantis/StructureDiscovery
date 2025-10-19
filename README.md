@@ -16,13 +16,8 @@
 
 </div>
 
-
 ## Abstract
-<<<<<<< HEAD
 Understanding the dynamics of feature learning in neural networks (NNs) remains a significant challenge. The work of [(Mousavi-Hosseini et al., 2023)](https://iclr.cc/virtual/2023/poster/11421) analyzes a multiple index teacher-student setting and shows that a two-layer student attains a low-rank structure in its first-layer weights when trained with stochastic gradient descent (SGD) and a strong regularizer. This structural property is known to reduce sample complexity of generalization. Indeed, in a second step, the same authors establish algorithm-specific learning guarantees under additional assumptions. In this paper, we focus exclusively on the structure discovery aspect and study it under weaker assumptions, more specifically: we allow (a) NNs of arbitrary size and depth, (b) with all parameters trainable, (c) under any smooth loss function, (d) tiny regularization, and (e) trained by any method that attains a second-order stationary point (SOSP), e.g. perturbed gradient descent (PGD). At the core of our approach is a key **derandomization** lemma, which states that optimizing the function  **E**<sub>**x**</sub> [**g**<sub>θ</sub>(**W** **x** + **b**)] converges to a point where **W = 0**, under mild conditions. The fundamental nature of this lemma directly explains structure discovery and has immediate applications in other domains including an end-to-end approximation for MAXCUT, and computing Johnson-Lindenstrauss embeddings. 
-=======
-Understanding the dynamics of feature learning in neural networks (NNs) remains a significant challenge. The work of [Mousavi-Hosseini et al., 2023](https://iclr.cc/virtual/2023/poster/11421) analyzes a multiple index teacher-student setting and shows that a two-layer student attains a low-rank structure in its first-layer weights when trained with stochastic gradient descent (SGD) and a strong regularizer. This structural property is known to reduce sample complexity of generalization. Indeed, in a second step, the same authors establish algorithm-specific learning guarantees under additional assumptions. In this paper, we focus exclusively on the structure discovery aspect and study it under weaker assumptions, more specifically: we allow (a) NNs of arbitrary size and depth, (b) with all parameters trainable, (c) under any smooth loss function, (d) tiny regularization, and (e) trained by any method that attains a second-order stationary point (SOSP), e.g. perturbed gradient descent (PGD). At the core of our approach is a key **derandomization** lemma, which states that optimizing the function  **E**<sub>**x**</sub> [**g**<sub>θ</sub>(**W** **x** + **b**)] converges to a point where **W = 0**, under mild conditions. The fundamental nature of this lemma directly explains structure discovery and has immediate applications in other domains including an end-to-end approximation for MAXCUT, and computing Johnson-Lindenstrauss embeddings. 
->>>>>>> 12856cdd0015314d244d95a265eda65bb6eed91d
 
 
 ## Citation
@@ -70,3 +65,4 @@ StructureDiscovery/
 
 ## Acknowledgments
 This work has been partially supported by project MIS 5154714 of the National Recovery and Resilience Plan Greece 2.0 funded by the European Union under the NextGenerationEU Program.
+
