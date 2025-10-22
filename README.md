@@ -61,4 +61,4 @@ StructureDiscovery/
 ```
 
 ## Acknowledgments
-The authors would like to thank Alireza Mousavi-Hosseini for useful discussions and feedback. This work has been partially supported by project MIS 5154714 of the National Recovery and Resilience Plan Greece 2.0 funded by the European Union under the NextGenerationEU Program. Ioannis Mitliagkas acknowledges support by Archimedes, Athena Research Center, Greece and a Canada CIFAR AI chair. The majority of work was performed at Archimedes in Athens.
+The authors would like to thank Alireza Mousavi-Hosseini for useful discussions and feedback. This work has been partially supported by project MIS 5154714 of the National Recovery and Resilience Plan Greece 2.0 funded by the European Union under the NextGenerationEU Program. Ioannis Mitliagkas acknowledges support by Archimedes, Athena Research Center, Greece and the Canada CIFAR AI Chair program. The majority of work was performed at Archimedes in Athens.
