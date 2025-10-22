@@ -1,7 +1,7 @@
 <div align="center">
 <h1>A Derandomization Framework for Structure Discovery: Applications in Neural Networks and Beyond</h1>
 
-**Nikos Tsikouras<sup>1,2</sup>, Christos Tzamos<sup>1,2</sup>, Ioannis Mitliagkas<sup>2,3</sup>, Yorgos Pantis<sup>1,2</sup>**
+**Nikos Tsikouras<sup>1,2</sup>, Yorgos Pantis<sup>1,2</sup>, Ioannis Mitliagkas<sup>2,3</sup>, Christos Tzamos<sup>1,2</sup>**
 
 <sup>1</sup>National and Kapodistrian University of Athens, Greece<br>
 <sup>2</sup>Archimedes, Athena Research Center, Greece<br>
@@ -22,11 +22,11 @@ Understanding the dynamics of feature learning in neural networks (NNs) remains 
 If you use this work, please cite:
 
 ```bibtex
-@inproceedings{derandomization2026, 
+@inproceedings{tsikouras2024derandomization, 
   title={A Derandomization Framework for Structure Discovery: Applications in Neural Networks and Beyond}, 
-  author={Tsikouras, Nikos and Tzamos, Christos and Mitliagkas, Ioannis and Pantis, Yorgos},
-  booktitle={The Four-teenth International Conference on Learning Representations}, 
-  year={2026}
+  author={Tsikouras, Nikos and Pantis, Yorgos and Mitliagkas, Ioannis and Tzamos, Christos},
+  booktitle={arXiv preprint}, 
+  year={2025}
 }
 ```
 
@@ -61,5 +61,4 @@ StructureDiscovery/
 ```
 
 ## Acknowledgments
-This work has been partially supported by project MIS 5154714 of the National Recovery and Resilience Plan Greece 2.0 funded by the European Union under the NextGenerationEU Program.
-
+The authors would like to thank Alireza Mousavi-Hosseini for useful discussions and feedback. This work has been partially supported by project MIS 5154714 of the National Recovery and Resilience Plan Greece 2.0 funded by the European Union under the NextGenerationEU Program. Ioannis Mitliagkas acknowledges support by Archimedes, Athena Research Center, Greece and a Canada CIFAR AI chair. The majority of work was performed at Archimedes in Athens.
