@@ -7,7 +7,7 @@
 <sup>2</sup>Archimedes, Athena Research Center, Greece<br>
 <sup>3</sup>Mila & Université de Montréal, Canada<br>
 
-[![Paper](https://img.shields.io/badge/arXiv-2026-blue?logo=arxiv&logoColor=white)](https://arxiv.org/abs/yourpaperid)
+[![Paper](https://img.shields.io/badge/arXiv-2025-blue?logo=arxiv&logoColor=white)](https://arxiv.org/abs/yourpaperid)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
