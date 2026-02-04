@@ -22,12 +22,12 @@ Understanding the dynamics of feature learning in neural networks (NNs) remains 
 If you use this work, please cite:
 
 ```bibtex
-@inproceedings{tsikouras2024derandomization, 
-  title={A Derandomization Framework for Structure Discovery: Applications in Neural Networks and Beyond}, 
-  author={Tsikouras, Nikos and Pantis, Yorgos and Mitliagkas, Ioannis and Tzamos, Christos},
-  booktitle={arXiv preprint}, 
-  year={2025}
-}
+@inproceedings{tsikouras2024derandomization,
+      title={A Derandomization Framework for Structure Discovery: Applications in Neural Networks and Beyond},
+      author={Tsikouras, Nikos and Pantis, Yorgos and Mitliagkas, Ioannis and Tzamos, Christos},
+      booktitle = {Proceedings of the Fourteenth Annual International Conference on Learning Representations},
+      year={2026}
+      }
 ```
 
 ## Project Structure
